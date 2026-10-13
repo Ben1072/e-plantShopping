@@ -65,4 +65,19 @@ const CartItem = ({ onContinueShopping }) => {
 
 export default CartItem;
 
+const handleCheckoutShopping = (e) => {
+  alert('Functionality to be added for future reference');
+};
+
+dispatch(updateQuantity({ name: item.name, quantity: item.quantity + 1 }));
+
+dispatch(addItem(product));
+
+const calculateTotalQuantity = () => { return CartItems ? CartItems.reduce((total, item) => total + item.quantity, 0) : 0; };
+
+dispatch(removeItem(item.name));
+};
+
+export default CartItem;
+
 
